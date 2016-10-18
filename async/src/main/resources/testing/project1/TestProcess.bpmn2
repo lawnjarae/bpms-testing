@@ -3,7 +3,7 @@
   <bpmn2:itemDefinition id="_statusItem" structureRef="String"/>
   <bpmn2:itemDefinition id="_countItem" structureRef="Integer"/>
   <bpmn2:itemDefinition id="__2E97DBB2-31CC-4A6A-B2C6-B914B0829972_instanceNumInputXItem" structureRef="Integer"/>
-  <bpmn2:process id="project1.TestProcess" drools:packageName="org.jbpm" drools:version="1.0" name="TestProcess" isExecutable="true">
+  <bpmn2:process id="async.TestProcess" drools:packageName="org.jbpm" drools:version="1.0" name="TestProcess" isExecutable="true">
     <bpmn2:property id="status" itemSubjectRef="_statusItem"/>
     <bpmn2:property id="count" itemSubjectRef="_countItem"/>
     <bpmn2:startEvent id="processStartEvent" drools:selectable="true" color:background-color="#9acd32" color:border-color="#000000" color:color="#000000" name="">
@@ -39,7 +39,7 @@
       <bpmn2:script><![CDATA[System.out.println("Fake MTO call goes here.");]]></bpmn2:script>
     </bpmn2:scriptTask>
     <bpmn2:sequenceFlow id="_4E217988-BF60-4E54-BA12-9FA615F8C670" drools:selectable="true" color:background-color="#000000" color:border-color="#000000" color:color="#000000" sourceRef="processStartEvent" targetRef="_941E9EF9-D167-4456-9EE7-BCBFF43E8F1F"/>
-    <bpmn2:callActivity id="_2E97DBB2-31CC-4A6A-B2C6-B914B0829972" drools:selectable="true" drools:independent="true" drools:waitForCompletion="true" color:background-color="#fafad2" color:border-color="#000000" color:color="#000000" name="Call Delivery" calledElement="project1.Delivery">
+    <bpmn2:callActivity id="_2E97DBB2-31CC-4A6A-B2C6-B914B0829972" drools:selectable="true" drools:independent="true" drools:waitForCompletion="true" color:background-color="#fafad2" color:border-color="#000000" color:color="#000000" name="Call Delivery" calledElement="async.Delivery">
       <bpmn2:extensionElements>
         <drools:metaData name="elementname">
           <drools:metaValue><![CDATA[Call Delivery]]></drools:metaValue>
@@ -127,7 +127,7 @@
     </bpmn2:sequenceFlow>
   </bpmn2:process>
   <bpmndi:BPMNDiagram id="_RyCY6JVbEea2x5gbuzpv5w">
-    <bpmndi:BPMNPlane id="_RyCY6ZVbEea2x5gbuzpv5w" bpmnElement="project1.TestProcess">
+    <bpmndi:BPMNPlane id="_RyCY6ZVbEea2x5gbuzpv5w" bpmnElement="async.TestProcess">
       <bpmndi:BPMNShape id="_RyCY6pVbEea2x5gbuzpv5w" bpmnElement="processStartEvent">
         <dc:Bounds height="30.0" width="30.0" x="30.0" y="245.0"/>
       </bpmndi:BPMNShape>

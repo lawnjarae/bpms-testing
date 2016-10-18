@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:color="http://www.omg.org/spec/BPMN/non-normative/color" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" id="_qk5McA19EeaK7NkvXXMMfw" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd" exporter="jBPM Designer" exporterVersion="6.2.0" expressionLanguage="http://www.mvel.org/2.0" targetNamespace="http://www.omg.org/bpmn20" typeLanguage="http://www.java.com/javaTypes">
   <bpmn2:signal id="_8283355f-a497-327f-811e-2439be4d62a6" name="HelloSignal"/>
-  <bpmn2:process id="project1.bp_helloworld" drools:packageName="org.jbpm" drools:version="1.0" name="bp_helloworld" isExecutable="true">
+  <bpmn2:process id="async.bp_helloworld" drools:packageName="org.jbpm" drools:version="1.0" name="bp_helloworld" isExecutable="true">
     <bpmn2:startEvent id="processStartEvent" drools:selectable="true" color:background-color="#9acd32" color:border-color="#000000" color:color="#000000" name="">
       <bpmn2:extensionElements>
         <drools:metaData name="elementname">
@@ -99,7 +99,7 @@
     <bpmn2:sequenceFlow id="_6A693CEA-C730-4990-B25D-33494351CE5B" drools:selectable="true" color:background-color="#000000" color:border-color="#000000" color:color="#000000" sourceRef="_BF42943D-D136-48F1-9F77-ABF181C97992" targetRef="_348D6BA7-E1E5-45FA-8D10-BB8B993A9D65"/>
   </bpmn2:process>
   <bpmndi:BPMNDiagram id="_qk5MdQ19EeaK7NkvXXMMfw">
-    <bpmndi:BPMNPlane id="_qk5Mdg19EeaK7NkvXXMMfw" bpmnElement="project1.bp_helloworld">
+    <bpmndi:BPMNPlane id="_qk5Mdg19EeaK7NkvXXMMfw" bpmnElement="async.bp_helloworld">
       <bpmndi:BPMNShape id="_qk5Mdw19EeaK7NkvXXMMfw" bpmnElement="processStartEvent">
         <dc:Bounds height="30.0" width="30.0" x="30.0" y="150.0"/>
       </bpmndi:BPMNShape>

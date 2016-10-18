@@ -8,7 +8,7 @@
   <bpmn2:itemDefinition id="__5778C05F-1B0D-481A-B6AA-A92CEB1F9BA0_UsernameInputXItem" structureRef="String"/>
   <bpmn2:itemDefinition id="__5778C05F-1B0D-481A-B6AA-A92CEB1F9BA0_PasswordInputXItem" structureRef="String"/>
   <bpmn2:itemDefinition id="__5778C05F-1B0D-481A-B6AA-A92CEB1F9BA0_ResultOutputXItem" structureRef="java.lang.Object"/>
-  <bpmn2:process id="project1.Delivery" drools:packageName="org.jbpm" drools:version="1.0" name="Delivery" isExecutable="true">
+  <bpmn2:process id="async.Delivery" drools:packageName="org.jbpm" drools:version="1.0" name="Delivery" isExecutable="true">
     <bpmn2:property id="instanceNum" itemSubjectRef="_instanceNumItem"/>
     <bpmn2:startEvent id="processStartEvent" drools:selectable="true" color:background-color="#9acd32" color:border-color="#000000" color:color="#000000" name="">
       <bpmn2:extensionElements>
@@ -110,7 +110,7 @@
     <bpmn2:sequenceFlow id="_838548AC-7517-48BD-BCE2-652CFE370E24" drools:selectable="true" color:background-color="#000000" color:border-color="#000000" color:color="#000000" sourceRef="_5778C05F-1B0D-481A-B6AA-A92CEB1F9BA0" targetRef="_946DD2D4-0B9B-4C17-BA21-3EB84CD78BD5"/>
   </bpmn2:process>
   <bpmndi:BPMNDiagram id="_qkfIb5VnEeaG7q-PVhyMSw">
-    <bpmndi:BPMNPlane id="_qkfIcJVnEeaG7q-PVhyMSw" bpmnElement="project1.Delivery">
+    <bpmndi:BPMNPlane id="_qkfIcJVnEeaG7q-PVhyMSw" bpmnElement="async.Delivery">
       <bpmndi:BPMNShape id="_qkfIcZVnEeaG7q-PVhyMSw" bpmnElement="processStartEvent">
         <dc:Bounds height="30.0" width="30.0" x="30.0" y="165.0"/>
       </bpmndi:BPMNShape>

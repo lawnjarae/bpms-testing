@@ -9,7 +9,7 @@
   <bpmn2:itemDefinition id="__E8DFF7B7-1546-44FB-81FB-CAFAAA425BBF_MethodInputXItem" structureRef="String"/>
   <bpmn2:itemDefinition id="__E8DFF7B7-1546-44FB-81FB-CAFAAA425BBF_ConnectTimeoutInputXItem" structureRef="String"/>
   <bpmn2:itemDefinition id="__E8DFF7B7-1546-44FB-81FB-CAFAAA425BBF_ResultOutputXItem" structureRef="java.lang.Object"/>
-  <bpmn2:process id="project1.SignaledDelivery" drools:packageName="org.jbpm" drools:version="1.0" name="SignaledDelivery" isExecutable="true">
+  <bpmn2:process id="async.SignaledDelivery" drools:packageName="org.jbpm" drools:version="1.0" name="SignaledDelivery" isExecutable="true">
     <bpmn2:property id="instanceNum" itemSubjectRef="_instanceNumItem"/>
     <bpmn2:startEvent id="_8E4B7DD9-3391-4BF4-A3E8-C6C4EEC316BC" drools:selectable="true" color:background-color="#9acd32" color:border-color="#000000" color:color="#000000" name="">
       <bpmn2:extensionElements>
@@ -120,7 +120,7 @@
     <bpmn2:sequenceFlow id="_EE74D805-E4F2-47C9-AD8A-9D92B8441391" drools:selectable="true" color:background-color="#000000" color:border-color="#000000" color:color="#000000" sourceRef="_885FD2C6-FFCF-44EE-9669-723B26A0252D" targetRef="_7FAC2C80-6045-4CA7-BD54-B8DF4A9340C3"/>
   </bpmn2:process>
   <bpmndi:BPMNDiagram id="_ExE5s5V_EeaG7q-PVhyMSw">
-    <bpmndi:BPMNPlane id="_ExE5tJV_EeaG7q-PVhyMSw" bpmnElement="project1.SignaledDelivery">
+    <bpmndi:BPMNPlane id="_ExE5tJV_EeaG7q-PVhyMSw" bpmnElement="async.SignaledDelivery">
       <bpmndi:BPMNShape id="_ExE5tZV_EeaG7q-PVhyMSw" bpmnElement="_8E4B7DD9-3391-4BF4-A3E8-C6C4EEC316BC">
         <dc:Bounds height="30.0" width="30.0" x="30.0" y="105.0"/>
       </bpmndi:BPMNShape>

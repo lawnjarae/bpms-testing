@@ -3,7 +3,7 @@
   <bpmn2:itemDefinition id="_statusItem" structureRef="String"/>
   <bpmn2:itemDefinition id="_countItem" structureRef="Integer"/>
   <bpmn2:signal id="_2863e4b0-c3dc-3e48-a895-911276c88127" name="StartDeliverySignal"/>
-  <bpmn2:process id="project1.TestProcessWithSignal" drools:packageName="org.jbpm" drools:version="1.0" name="TestProcessWithSignal" isExecutable="true">
+  <bpmn2:process id="async.TestProcessWithSignal" drools:packageName="org.jbpm" drools:version="1.0" name="TestProcessWithSignal" isExecutable="true">
     <bpmn2:property id="status" itemSubjectRef="_statusItem"/>
     <bpmn2:property id="count" itemSubjectRef="_countItem"/>
     <bpmn2:startEvent id="processStartEvent" drools:selectable="true" color:background-color="#9acd32" color:border-color="#000000" color:color="#000000" name="">
@@ -135,7 +135,7 @@
     <bpmn2:sequenceFlow id="_A5343F98-FEBC-497F-85A1-CFCDEBFE376B" drools:selectable="true" color:background-color="#000000" color:border-color="#000000" color:color="#000000" sourceRef="processStartEvent" targetRef="_EE2BFC66-2AC3-4114-9375-4BBE476E4F4A"/>
   </bpmn2:process>
   <bpmndi:BPMNDiagram id="_QqJSApWCEeaI_9MGX5kyHQ">
-    <bpmndi:BPMNPlane id="_QqJSA5WCEeaI_9MGX5kyHQ" bpmnElement="project1.TestProcessWithSignal">
+    <bpmndi:BPMNPlane id="_QqJSA5WCEeaI_9MGX5kyHQ" bpmnElement="async.TestProcessWithSignal">
       <bpmndi:BPMNShape id="_QqJSBJWCEeaI_9MGX5kyHQ" bpmnElement="processStartEvent">
         <dc:Bounds height="30.0" width="30.0" x="30.0" y="245.0"/>
       </bpmndi:BPMNShape>
