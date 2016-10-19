@@ -45,4 +45,5 @@
     <configurations/>
     <required-roles/>
     <remoteable-classes/>
+    <limit-serialization-classes>false</limit-serialization-classes>
 </deployment-descriptor>
