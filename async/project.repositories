@@ -3,14 +3,6 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>artifactory-release</id>
-        <url>http://pu00facapp007.digitalglobe.com:8081/artifactory/plugins-release</url>
-        <source>SETTINGS</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
         <id>artifactory-snapshot</id>
         <url>http://pu00facapp007.digitalglobe.com:8081/artifactory/plugins-snapshot</url>
         <source>SETTINGS</source>
@@ -20,16 +12,16 @@
       <include>true</include>
       <metadata>
         <id>artifactory-release</id>
-        <url>http://pu00facapp007.digitalglobe.com:8081/artifactory/libs-release</url>
+        <url>http://pu00facapp007.digitalglobe.com:8081/artifactory/plugins-release</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
     <repository>
       <include>true</include>
       <metadata>
-        <id>artifactory-snapshot</id>
-        <url>http://pu00facapp007.digitalglobe.com:8081/artifactory/libs-snapshot</url>
-        <source>SETTINGS</source>
+        <id>local</id>
+        <url>/home/jjarae/.m2/repository</url>
+        <source>LOCAL</source>
       </metadata>
     </repository>
     <repository>
@@ -43,9 +35,17 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>local</id>
-        <url>/home/jjarae/.m2/repository</url>
-        <source>LOCAL</source>
+        <id>artifactory-snapshot</id>
+        <url>http://pu00facapp007.digitalglobe.com:8081/artifactory/libs-snapshot</url>
+        <source>SETTINGS</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
+        <id>artifactory-release</id>
+        <url>http://pu00facapp007.digitalglobe.com:8081/artifactory/libs-release</url>
+        <source>SETTINGS</source>
       </metadata>
     </repository>
   </repositories>
